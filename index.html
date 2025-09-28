@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellar Stories: A Space Weather Adventure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes sun-glow {
+        0%, 100% {
+          transform: scale(1);
+          box-shadow: 0 0 40px 10px #fef08a, 0 0 60px 20px #fde047, 0 0 100px 40px #facc15;
+        }
+        50% {
+          transform: scale(1.05);
+          box-shadow: 0 0 50px 15px #fef08a, 0 0 80px 30px #fde047, 0 0 140px 60px #facc15;
+        }
+      }
+      .sun-animation {
+        animation: sun-glow 8s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-900 text-white overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
